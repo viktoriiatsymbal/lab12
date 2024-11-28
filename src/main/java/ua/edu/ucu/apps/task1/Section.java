@@ -23,6 +23,8 @@ public abstract class Section {
         if (left != 0) {
             if (hasNext()) {
                 next.process(left);
+            } else {
+                throw new IllegalAccessError("Invalid amount");
             }
         } 
         
